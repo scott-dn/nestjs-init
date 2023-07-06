@@ -74,6 +74,12 @@
       "rules": {
         "@typescript-eslint/no-extraneous-class": "off"
       }
+    },
+    {
+      "files": ["test/**/*.ts"],
+      "rules": {
+        "jest/expect-expect": ["error", { "assertFunctionNames": ["expect", "request.**.expect"] }]
+      }
     }
   ]
 }
