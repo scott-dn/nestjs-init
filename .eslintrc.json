@@ -24,12 +24,6 @@
     "node": true,
     "jest": true
   },
-  "settings": {
-    "import/resolver": {
-      "node": true,
-      "typescript": true
-    }
-  },
   "rules": {
     // turn off rules that are covered already by others
     "unicorn/prefer-top-level-await": "off",
@@ -53,8 +47,10 @@
     "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
     "comma-dangle": ["error", "never"],
     "semi": ["error", "always"],
+    "@typescript-eslint/no-unused-vars": ["error"],
 
     // import
+    "import/newline-after-import": ["error", { "count": 1 }],
     "sort-imports": ["error", { "ignoreCase": true, "ignoreDeclarationSort": true }],
     "import/order": [
       "error",
